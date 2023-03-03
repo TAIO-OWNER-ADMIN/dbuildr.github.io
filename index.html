@@ -12,7 +12,10 @@
   <body>
      <button onclick="add()">Save</button>
      <textarea id="in" placeholder="Put HTML Text Here!"></textarea>
-     <script src="add.py">
-    </script> 
+     <py-script>
+       inval = Element('in').element.value
+       f = open("caramelslices/index.html","a")
+       f.write(inval)
+    </py-script> 
   </body>
 </html>
